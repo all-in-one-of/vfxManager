@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1349</width>
+    <height>961</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>VFXManager</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame_TaskPanel">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>10</y>
+      <width>811</width>
+      <height>901</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_DataTree">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>46</y>
+      <width>501</width>
+      <height>865</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+     </font>
+    </property>
+    <property name="title">
+     <string>Data Tree</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>5</y>
+      <width>501</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Project</string>
+    </property>
+    <widget class="QWidget" name="horizontalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>14</y>
+       <width>491</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>分辨率</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_resX">
+        <property name="text">
+         <string>resX</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_resY">
+        <property name="text">
+         <string>resY</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>帧率</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_fps">
+        <property name="text">
+         <string>fps</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1349</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>项目</string>
+    </property>
+    <addaction name="action_Open"/>
+    <addaction name="action_New"/>
+    <addaction name="separator"/>
+    <addaction name="action_Setting"/>
+    <addaction name="action_Fresh"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>功能</string>
+    </property>
+    <addaction name="action_Daily"/>
+    <addaction name="separator"/>
+    <addaction name="action_PackCache"/>
+    <addaction name="action_PackRenderSeq"/>
+    <addaction name="action_PackCompSeq"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Open">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="action_New">
+   <property name="text">
+    <string>新建</string>
+   </property>
+  </action>
+  <action name="action_Daily">
+   <property name="text">
+    <string>发布Daily</string>
+   </property>
+  </action>
+  <action name="action_PackCache">
+   <property name="text">
+    <string>打包缓存</string>
+   </property>
+  </action>
+  <action name="action_PackRenderSeq">
+   <property name="text">
+    <string>打包渲染序列</string>
+   </property>
+  </action>
+  <action name="action_PackCompSeq">
+   <property name="text">
+    <string>打包合成序列</string>
+   </property>
+  </action>
+  <action name="action_Setting">
+   <property name="text">
+    <string>设置</string>
+   </property>
+  </action>
+  <action name="action_Fresh">
+   <property name="text">
+    <string>刷新</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

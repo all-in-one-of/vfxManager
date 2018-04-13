@@ -1,0 +1,11 @@
+# coding=utf-8
+def CreateDccOp(dcc):
+	if dcc=="Maya":
+		import mayaOp
+		return mayaOp.mayaOp()
+	elif dcc=="Hou":
+		import houOp
+		return houOp.houOp()
+	elif dcc=="Nk":
+		import nukeOp
+		return nukeOp.nukeOp()

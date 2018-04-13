@@ -1,0 +1,90 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file './ui\NewProject.ui'
+#
+# Created: Wed Apr 11 18:14:16 2018
+#      by: pyside2-uic  running on PySide2 2.0.0~alpha0
+#
+# WARNING! All changes made in this file will be lost!
+
+from PySide2 import QtCore, QtGui, QtWidgets
+
+class Ui_Dialog(object):
+    def setupUi(self, Dialog):
+        Dialog.setObjectName("Dialog")
+        Dialog.resize(275, 159)
+        self.buttonBox = QtWidgets.QDialogButtonBox(Dialog)
+        self.buttonBox.setGeometry(QtCore.QRect(80, 110, 181, 32))
+        self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
+        self.buttonBox.setStandardButtons(QtWidgets.QDialogButtonBox.Cancel|QtWidgets.QDialogButtonBox.Ok)
+        self.buttonBox.setObjectName("buttonBox")
+        self.gridLayoutWidget = QtWidgets.QWidget(Dialog)
+        self.gridLayoutWidget.setGeometry(QtCore.QRect(10, 10, 251, 91))
+        self.gridLayoutWidget.setObjectName("gridLayoutWidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.gridLayoutWidget)
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout.setObjectName("gridLayout")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.spinBox_W = QtWidgets.QSpinBox(self.gridLayoutWidget)
+        font = QtGui.QFont()
+        font.setFamily("Calibri")
+        self.spinBox_W.setFont(font)
+        self.spinBox_W.setMaximum(9999)
+        self.spinBox_W.setProperty("value", 1920)
+        self.spinBox_W.setObjectName("spinBox_W")
+        self.horizontalLayout_2.addWidget(self.spinBox_W)
+        self.spinBox_H = QtWidgets.QSpinBox(self.gridLayoutWidget)
+        font = QtGui.QFont()
+        font.setFamily("Calibri")
+        self.spinBox_H.setFont(font)
+        self.spinBox_H.setMaximum(9999)
+        self.spinBox_H.setProperty("value", 1080)
+        self.spinBox_H.setObjectName("spinBox_H")
+        self.horizontalLayout_2.addWidget(self.spinBox_H)
+        self.gridLayout.addLayout(self.horizontalLayout_2, 2, 1, 1, 1)
+        self.label_2 = QtWidgets.QLabel(self.gridLayoutWidget)
+        font = QtGui.QFont()
+        font.setFamily("Calibri")
+        self.label_2.setFont(font)
+        self.label_2.setObjectName("label_2")
+        self.gridLayout.addWidget(self.label_2, 1, 0, 1, 1)
+        self.lineEdit_ProjName = QtWidgets.QLineEdit(self.gridLayoutWidget)
+        self.lineEdit_ProjName.setObjectName("lineEdit_ProjName")
+        self.gridLayout.addWidget(self.lineEdit_ProjName, 0, 1, 1, 1)
+        self.comboBox_FPS = QtWidgets.QComboBox(self.gridLayoutWidget)
+        font = QtGui.QFont()
+        font.setFamily("Calibri")
+        self.comboBox_FPS.setFont(font)
+        self.comboBox_FPS.setObjectName("comboBox_FPS")
+        self.comboBox_FPS.addItem("")
+        self.comboBox_FPS.addItem("")
+        self.comboBox_FPS.addItem("")
+        self.gridLayout.addWidget(self.comboBox_FPS, 1, 1, 1, 1)
+        self.label = QtWidgets.QLabel(self.gridLayoutWidget)
+        font = QtGui.QFont()
+        font.setFamily("Calibri")
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.gridLayout.addWidget(self.label, 0, 0, 1, 1)
+        self.label_3 = QtWidgets.QLabel(self.gridLayoutWidget)
+        font = QtGui.QFont()
+        font.setFamily("Calibri")
+        self.label_3.setFont(font)
+        self.label_3.setObjectName("label_3")
+        self.gridLayout.addWidget(self.label_3, 2, 0, 1, 1)
+
+        self.retranslateUi(Dialog)
+        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL("accepted()"), Dialog.accept)
+        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL("rejected()"), Dialog.reject)
+        QtCore.QMetaObject.connectSlotsByName(Dialog)
+
+    def retranslateUi(self, Dialog):
+        Dialog.setWindowTitle(QtWidgets.QApplication.translate("Dialog", "New Project", None, -1))
+        self.label_2.setText(QtWidgets.QApplication.translate("Dialog", "FPS", None, -1))
+        self.comboBox_FPS.setItemText(0, QtWidgets.QApplication.translate("Dialog", "film", None, -1))
+        self.comboBox_FPS.setItemText(1, QtWidgets.QApplication.translate("Dialog", "pal", None, -1))
+        self.comboBox_FPS.setItemText(2, QtWidgets.QApplication.translate("Dialog", "ntsc", None, -1))
+        self.label.setText(QtWidgets.QApplication.translate("Dialog", "Name", None, -1))
+        self.label_3.setText(QtWidgets.QApplication.translate("Dialog", "Resolution", None, -1))
+
